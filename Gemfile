@@ -1,12 +1,13 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.6.3'
+ruby '2.6.5'
 
 gem 'rails', '~> 5.2', '>= 5.2.3'
 
 gem 'pg', '~> 1.1', '>= 1.1.4'
 gem 'puma', '~> 3.11'
+# TODO: remove this gem
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.4.2', require: false
@@ -35,7 +36,5 @@ group :test do
 end
 
 group :development, :test do
-gem 'rubocop'
+  gem 'rubocop'
 end
-
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
