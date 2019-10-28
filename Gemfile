@@ -7,16 +7,17 @@ gem 'rails', '~> 5.2', '>= 5.2.3'
 
 gem 'pg', '~> 1.1', '>= 1.1.4'
 gem 'puma', '~> 3.11'
-gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.4.2', require: false
 gem "slim-rails"
+gem "kaminari"
 
 
 #front-end gems
 gem "bootstrap-sass", "~> 3.3.7"
 gem "bootswatch-rails"
 gem 'sass-rails', "~> 5.0"
+gem 'bootstrap', '~> 4.0'
 
 #views
 gem 'simple_form'
@@ -35,7 +36,5 @@ group :test do
 end
 
 group :development, :test do
-gem 'rubocop'
+  gem 'rubocop'
 end
-
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]

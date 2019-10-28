@@ -33,4 +33,6 @@
                 p class="course" Higher Institute of Information Technology and Intelligent Systems
                 p class="institution" Kazan Federal University
 
-  = render template: "stories/index"
+.col-12.col-lg-4
+  h1 Stories
+  = paginate  @stories

@@ -1,4 +1,6 @@
 class Story < ApplicationRecord
+
+  paginates_per 5
   validates :title, presence: true, length: { minimum: 3 }
 
   scope :published, ->   { where(published: true) }
