@@ -4,7 +4,7 @@ class StoriesController < ApplicationController
 		@story = Story.new
 	end
 
-	def index
+  def index
     @stories = Story.order(:title).page(params[:page])
   end
 
