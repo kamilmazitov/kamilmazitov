@@ -9,9 +9,6 @@ class StoriesController < ApplicationController
   end
 
 	def create
-  	@story = Story.new(story_params)
-
-    # TODO: what if storie was not saved
   	if @story.save
       redirect_to @story
     else
@@ -25,15 +22,24 @@ class StoriesController < ApplicationController
 
   # TODO
   def edit
-
+    @story = Story.find(params[:id])
   end
 
   def update
+    story.update(story_params)
+    story.save
+
+    respond_with story
 
   end
 
   def destroy
+    @story=Story.find(params[:id])
+    @story.destroy
 
+    flash.notice="Story '#{@story.title}' was deleted"
+
+    redirect_to story_path
   end
 
 	private
