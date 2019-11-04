@@ -2,12 +2,12 @@
   .col-12.col-lg-4
     #profile
       img class="portrait" src="https://sun9-28.userapi.com/c851232/v851232868/319c0/LJBsjLztfZY.jpg"
-      
+
       .portrait-title
         h2 Камиль Мазитов
-        h3 Ruby on Rails junior-developer
+        h3 id="gray-h" Ruby on Rails junior-developer
         h3
-          span FlatStack
+          a class="text-muted" href="https://www.flatstack.com/" FlatStack
 
   .col-12.col-lg-8
     #biography
@@ -32,3 +32,7 @@
               div
                 p class="course" Higher Institute of Information Technology and Intelligent Systems
                 p class="institution" Kazan Federal University
+
+.col-12.col-lg-4
+  h1 Stories
+  = paginate @stories
