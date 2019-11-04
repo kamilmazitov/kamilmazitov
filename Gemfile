@@ -15,7 +15,7 @@ gem 'devise'
 
 
 #front-end gems
-gem "bootstrap-sass", "~> 3.3.7"
+gem "bootstrap-sass", "~> 3.4.1"
 gem "bootswatch-rails"
 gem 'sass-rails', "~> 5.0"
 gem 'bootstrap', '~> 4.0'
