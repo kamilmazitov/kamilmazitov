@@ -6,7 +6,7 @@ ruby '2.6.3'
 gem 'rails', '~> 5.2', '>= 5.2.3'
 
 gem 'pg', '~> 1.1', '>= 1.1.4'
-gem 'puma', '~> 3.11'
+gem 'puma', '~> 3.12'
 gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.4.2', require: false
 gem "slim-rails"
